@@ -22,3 +22,22 @@ if (distance1 > count) {
 } else {
     alert(`First distance(${distance1}km) < second distance(${distance2}ft)`);
 }
+
+//task3
+
+let numA = parseInt(prompt("Enter a number(a)"));
+let numB = parseInt(prompt("Enter another number(b)"));
+
+let count1 = numB / numA;
+let integer1 = Math.trunc(count1);
+
+let count2 = numA / numB;
+let integer2 = Math.trunc(count2);
+
+if (count1 === integer1 && count2 !== integer2) {
+    alert("Number a is a divisor of number b and Number b is not a divisor of number a");
+} else if (count2 === integer2 && count1 !== integer1) {
+    alert("Number b is a divisor of number a and Number a is not a divisor of number b ");
+} else if(count1 !== integer1 && count2 !== integer2){
+    alert("Number b is not a divisor of number a and Number a is not a divisor of number b ");
+}

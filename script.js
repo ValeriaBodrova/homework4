@@ -1,6 +1,6 @@
 //task1
 
-let number = parseInt(prompt("Enter a number"));
+let number = parseInt(prompt("Task1.Enter a number"));
 let number2 = parseInt(prompt("Enter another number"));
 
 if (number > number2) {
@@ -12,7 +12,7 @@ if (number > number2) {
 
 //task2
 
-let distance1 = parseInt(prompt("Enter the distance in kilometers"));
+let distance1 = parseInt(prompt("Task.2Enter the distance in kilometers"));
 let distance2 = parseInt(prompt("Enter the distance in foots"));
 
 let count = distance2 * 0.0003048;
@@ -25,7 +25,7 @@ if (distance1 > count) {
 
 //task3
 
-let numA = parseInt(prompt("Enter a number(a)"));
+let numA = parseInt(prompt("Task3.Enter a number(a)"));
 let numB = parseInt(prompt("Enter another number(b)"));
 
 let count1 = numB / numA;
@@ -44,7 +44,7 @@ if (count1 === integer1 && count2 !== integer2) {
 
 //task4
 
-let numberTask4 = parseInt(prompt("Enter a number"));
+let numberTask4 = parseInt(prompt("Task4.Enter a number"));
 
 let typeOfDigit = numberTask4 / 2;
 let int = Math.trunc(typeOfDigit);
@@ -58,7 +58,7 @@ if (typeOfDigit === int) {
 
 //task5
 
-let numberTask5 = parseInt(prompt("Enter two-digit number"));
+let numberTask5 = parseInt(prompt("Task5.Enter two-digit number"));
 
 let firstDigit = Math.floor(numberTask5 % 100 / 10);
 let lastDigit1 = numberTask5 % 10;
@@ -69,4 +69,38 @@ if (firstDigit > lastDigit1) {
     alert(`first digit(${firstDigit}) < second digit(${lastDigit1})`);
 } else if(firstDigit === lastDigit1){
     alert(`first digit(${firstDigit}) = second digit(${lastDigit1})`);
+}
+
+//task6
+
+let num61 = parseInt(prompt("Task6.Enter three-digit number"));
+
+let num62 = num61 % 1000;
+let num63 = num61 % 100;
+let num64 = num61 % 10;
+
+let sum = num62 + num63 + num64;
+
+let divide = sum / 2;
+let int61 = Math.round(divide);
+
+let divide2 = sum / 5;
+let int62 = Math.round(divide2);
+
+let product = num62 * num63 * num64;
+
+if (divide === int61){ 
+    alert("The sum of the digits of the number is even");
+} else {
+    alert("The sum of the digits of the number is odd");
+}
+if (divide2 === int62) {
+    alert("Sum of digits of number is multiple of five");
+} else {
+    alert("Sum of digits of number is not multiple of five");
+}
+if (product > 100) {
+    alert("Product of digits of number is more than 100");
+} else {
+    alert("Product of digits of number is less than 100");
 }

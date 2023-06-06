@@ -104,3 +104,23 @@ if (product > 100) {
 } else {
     alert("Product of digits of number is less than 100");
 }
+
+//task7
+
+let num71 = parseInt(prompt("Task7.Enter three-digit number"));
+
+let num72 = num61 % 1000;
+let num73 = num61 % 100;
+let num74 = num61 % 10;
+
+if (num72 === num73 === num74){
+    alert("All of the digits are similar");
+} else {
+    alert("All of the digits are not similar");
+}
+
+if (num72 === num73 || num73 === num74 || num74 === num72) {
+    alert("There are similar numbers in the number");
+} else {
+    alert("There are no similar numbers in the number")
+}

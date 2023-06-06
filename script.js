@@ -55,3 +55,18 @@ if (typeOfDigit === int) {
 } else {
     alert(`The number is odd. Last digit: ${lastDigit}`);
 }
+
+//task5
+
+let numberTask5 = parseInt(prompt("Enter two-digit number"));
+
+let firstDigit = Math.floor(numberTask5 % 100 / 10);
+let lastDigit1 = numberTask5 % 10;
+
+if (firstDigit > lastDigit1) {
+    alert(`first digit(${firstDigit}) > second digit(${lastDigit1})`);
+} else if(firstDigit < lastDigit1){
+    alert(`first digit(${firstDigit}) < second digit(${lastDigit1})`);
+} else if(firstDigit === lastDigit1){
+    alert(`first digit(${firstDigit}) = second digit(${lastDigit1})`);
+}

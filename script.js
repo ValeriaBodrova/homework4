@@ -124,3 +124,28 @@ if (num72 === num73 || num73 === num74 || num74 === num72) {
 } else {
     alert("There are no similar numbers in the number")
 }
+
+// task8
+
+let num81 = parseInt(prompt("Task8.Enter six-digit number"));
+
+
+let num82 = num81 % 1000;
+
+console.log(num82);
+
+let num83 = Math.trunc(num81 % 1000000 / 1000);
+
+console.log(num83);
+
+let reverse = num82.toString().split('').reverse().join('');
+
+console.log(reverse);
+
+let reversedNum = parseInt(reverse);
+
+if(reversedNum === num83){
+    alert("This is mirror number");
+} else {
+    alert("This is not mirror number");
+} 
